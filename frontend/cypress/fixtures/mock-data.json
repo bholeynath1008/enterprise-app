@@ -1,0 +1,18 @@
+{
+  "users": {
+    "superAdmin": { "email": "admin@fms.com", "password": "admin123", "role": "super_admin", "name": "Alexandra Chen" },
+    "staff": { "email": "ops@fms.com", "password": "ops123", "role": "franchisor_staff", "name": "Marcus Webb" },
+    "owner": { "email": "owner1@pizzapalace.com", "password": "owner123", "role": "franchisee_owner", "name": "Tony Ricci" },
+    "manager": { "email": "mgr1@pizzapalace.com", "password": "mgr123", "role": "location_manager", "name": "Dave Logan" }
+  },
+  "newTicket": {
+    "title": "Test ticket from Cypress",
+    "description": "This ticket was created by an automated E2E test.",
+    "priority": "medium"
+  },
+  "newAnnouncement": {
+    "title": "Cypress Test Announcement",
+    "body": "This announcement was created during automated E2E testing.",
+    "priority": "low"
+  }
+}
