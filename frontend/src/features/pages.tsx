@@ -14,7 +14,7 @@ import {
   getPaginationRowModel, flexRender, type ColumnDef, type SortingState,
 } from '@tanstack/react-table';
 import {
-  Building2, DollarSign, AlertTriangle, Ticket, CheckSquare,
+  Building2, DollarSign, AlertTriangle, Ticket as TicketIcon, CheckSquare,
   TrendingUp, Plus, Check, Send, ChevronUp, ChevronDown,
   RefreshCw, Download, ChevronLeft, ChevronRight,
 } from 'lucide-react';
@@ -75,7 +75,7 @@ function SuperAdminDashboard() {
         <StatCard label={t('dashboard.totalSalesYTD')} value={fmt(stats?.totalSalesYTD ?? 0)} change="↑ 12.4% vs last year" changeType="up" accent="blue" icon={<TrendingUp />} loading={isLoading} />
         <StatCard label={t('dashboard.royaltiesCollected')} value={fmt(stats?.totalRoyaltiesCollected ?? 0)} change="Q1 on track" changeType="up" accent="emerald" icon={<DollarSign />} loading={isLoading} />
         <StatCard label={t('dashboard.overdueRoyalties')} value={fmt(stats?.overdueRoyalties ?? 0)} change={`${stats?.overdueRoyaltyCount ?? 0} franchisees`} changeType="down" accent="red" icon={<AlertTriangle />} loading={isLoading} />
-        <StatCard label={t('dashboard.openTickets')} value={stats?.openTickets ?? 0} change="Need attention" changeType="flat" accent="amber" icon={<Ticket />} loading={isLoading} />
+        <StatCard label={t('dashboard.openTickets')} value={stats?.openTickets ?? 0} change="Need attention" changeType="flat" accent="amber" icon={<TicketIcon />} loading={isLoading} />
         <StatCard label={t('dashboard.pendingTasks')} value={stats?.pendingTasks ?? 0} change="Across all units" changeType="flat" accent="purple" icon={<CheckSquare />} loading={isLoading} />
       </div>
 
